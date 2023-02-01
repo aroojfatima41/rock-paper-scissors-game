@@ -1,7 +1,7 @@
 # rock-paper-scissors-game
 A practice project rock paper scissors game
 
-Its a classic two player hand game.Where both players simultaneaously make on of the three shapes with their outstretched hands.
+Its a classic two player hand game.Where both players simultaneaously make one of the three shapes with their outstretched hands.
 The shapes are as mentioned:
 * "rock" (a closed fist)
 * "paper" (a flat hand)
@@ -10,7 +10,24 @@ The shapes are as mentioned:
 <div align="center">
   <h1>Game Rules</h1>
   <p>
-    <img alt="rock-paper-scissors-rule" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fandygrunwald.com%2Fimages%2Fposts%2Fplaying-rock-paper-scissors-with-500-people%2Frock-paper-scissors-game-rules.png&imgrefurl=https%3A%2F%2Fandygrunwald.com%2Fblog%2Fplaying-rockpaperscissors-with-500-people%2F&tbnid=elAxuYgKutl4OM&vet=12ahUKEwit2MnE7_P8AhWBn3IEHXtBAsMQMygBegUIARD0AQ..i&docid=LisqOBecXS9PoM&w=972&h=852&q=rock%20paper%20scissors%20game&ved=2ahUKEwit2MnE7_P8AhWBn3IEHXtBAsMQMygBegUIARD0AQ">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/1200px-Rock-paper-scissors.svg.png" width = "600" height = "600"/>
+
   </p>
 </div>
+
+This a player vs computer game.
+
+**Possible cases** -  
+
+* (player = rock) and (computer == paper); computer wins
+* (player == paper) and (computer == paper); tie
+* (player == scissors) and (computer == paper); player wins
+
+* (player == rock) and (computer == rock); tie
+* (player == paper) and (computer == rock); player wins
+* (player == scissors) and (computer == rock); computer wins
+
+* (player == rock) and (computer == scissors); player wins
+* (player == paper) and (computer == scissors); computer wins
+* (player == scissors) and (computer == scissors); tie
 
