@@ -10,11 +10,19 @@ There would be a total of nine combinations and result will be computed as follo
 1st player,2nd player>> result
 
 rock,paper>> paper
-rock,scissor>> rock
-paper,rock>> paper
-paper,scissor>> scissor
-scissor,rock>> rock
-scissor,paper>> scissor
-scissor,scissor>> draw
-paper,paper>> draw
-rock,rock>> draw
+
+rock,scissor>> rock 
+
+paper,rock>> paper 
+
+paper,scissor>> scissor 
+
+scissor,rock>> rock 
+
+scissor,paper>> scissor 
+
+scissor,scissor>> draw 
+
+paper,paper>> draw 
+
+rock,rock>> draw 
