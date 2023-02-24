@@ -15,7 +15,7 @@ The shapes are as mentioned:
   </p>
 </div>
 
-This a player vs computer game.
+This is a player vs computer game.
 
 **Possible cases** -  
 
