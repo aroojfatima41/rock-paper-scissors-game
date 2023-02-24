@@ -1,20 +1,33 @@
 # rock-paper-scissors-game
 A practice project rock paper scissors game
 
-Its a two player game.Starting with player one followed by the other.
+Its a classic two player hand game.Where both players simultaneaously make one of the three shapes with their outstretched hands.
+The shapes are as mentioned:
+* "rock" (a closed fist)
+* "paper" (a flat hand)
+* "scissors" (a fist with the index finger and middle finger extended, forming a V)
 
-Both players have to chose a weapon from three weapon options available namely rock, paper and scissor
+<div align="center">
+  <h1>Game Rules</h1>
+  <p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/1200px-Rock-paper-scissors.svg.png" width = "600" height = "600"/>
 
-There would be a total of nine combinations and result will be computed as follows:
+  </p>
+</div>
 
-1st player,2nd player>> result
+This is a player vs computer game.
 
-rock,paper>> paper
-rock,scissor>> rock
-paper,rock>> paper
-paper,scissor>> scissor
-scissor,rock>> rock
-scissor,paper>> scissor
-scissor,scissor>> draw
-paper,paper>> draw
-rock,rock>> draw
+**Possible cases** -  
+
+* (player = rock) and (computer == paper); computer wins
+* (player == paper) and (computer == paper); tie
+* (player == scissors) and (computer == paper); player wins
+
+* (player == rock) and (computer == rock); tie
+* (player == paper) and (computer == rock); player wins
+* (player == scissors) and (computer == rock); computer wins
+
+* (player == rock) and (computer == scissors); player wins
+* (player == paper) and (computer == scissors); computer wins
+* (player == scissors) and (computer == scissors); tie
+
