@@ -1,13 +1,15 @@
 import ComputerInput from "../ComputerInput"
 import { FaHandScissors, FaHandRock, FaHandPaper } from "react-icons/fa"
+import "./InputContainer.css"
 
 const InputContainer = ({ userInput }) => {
   return (
-    <div>
+    <div className="inputWrapper">
       {userInput && (
-        <>
-          <h1>Computer</h1> <ComputerInput />
-        </>
+        <div>
+          <h1>Computer</h1>
+          <ComputerInput />
+        </div>
       )}
       {userInput && (
         <div>
