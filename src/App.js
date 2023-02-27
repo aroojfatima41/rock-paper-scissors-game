@@ -6,14 +6,15 @@ import { useState } from "react"
 
 const App = () => {
   const [userChoice, setUserChoice] = useState(undefined)
+  const [loader, setLoader] = useState(true)
 
   return (
     <div className="root">
       <h1 className="App">Rock Paper scissor</h1>
 
       <LifeLinesContainer />
-      {userChoice && <InputContainer userInput={userChoice} />}
-      <ChoicesContainer setUserChoice={setUserChoice} />
+      {userChoice && <InputContainer userInput={userChoice} loader={loader} />}
+      <ChoicesContainer setUserChoice={setUserChoice} setLoader={setLoader} />
     </div>
   )
 }
