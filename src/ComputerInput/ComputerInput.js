@@ -1,8 +1,9 @@
 import { FaHandScissors, FaHandRock, FaHandPaper } from "react-icons/fa"
 
-const ComputerInput = () => {
+const ComputerInput = ({ setComputerChoice }) => {
   const generateRandomNumber = Math.floor(Math.random() * 101)
   const computersChoice = generateRandomNumber <= 33 ? "scissors" : generateRandomNumber <= 66 ? "rock" : "paper"
+  setComputerChoice(computersChoice)
 
   return (
     <div className="iconsContainer">

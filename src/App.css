@@ -3,5 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 50px;
+}
+.restartButton {
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  border: 1px solid yellowgreen;
+  background-color: yellowgreen;
+  cursor: pointer;
 }

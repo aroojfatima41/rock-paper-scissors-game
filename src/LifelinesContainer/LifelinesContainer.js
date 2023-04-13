@@ -1,18 +1,17 @@
-import { FaHeart } from "react-icons/fa"
 import "./LifelinesContainer.css"
 
-function LifeLinesContainer() {
+const LifeLinesContainer = ({ playerScore, computerScore }) => {
+
   return (
     <div className="lifelinesContainer">
-      <h1 className="lifelinesHeading">LifeLines</h1>
       <div className="lifelinesIconsContainer">
         <div>
-          <FaHeart size={100} />
           <h3>Player</h3>
+          {playerScore}
         </div>
         <div>
-          <FaHeart size={100} />
           <h3>Computer</h3>
+          {computerScore}
         </div>
       </div>
     </div>

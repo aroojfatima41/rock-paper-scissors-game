@@ -2,8 +2,9 @@ import { Button } from "antd"
 import { FaHandScissors, FaHandRock, FaHandPaper } from "react-icons/fa"
 import "./ChoicesContainer.css"
 
-const ChoicesCotainer = ({ setUserChoice, setLoader }) => {
+const ChoicesCotainer = ({ setUserChoice, setLoader, setMoves, moves }) => {
   const onChoiceClick = (choice) => {
+    if (moves !== 0) setMoves(moves - 1)
     setUserChoice(choice)
     setLoader(true)
     setTimeout(() => setLoader(false), 500)
