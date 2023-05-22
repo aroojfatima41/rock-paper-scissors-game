@@ -19,12 +19,18 @@ const App = () => {
 
       <LifeLinesContainer playerScore={playerScore} computerScore={computerScore} />
 
-      {userChoice && <InputContainer userInput={userChoice} loader={loader} setComputerChoice={setComputerChoice} />}
+      {userChoice && <InputContainer userInput={userChoice} loader={loader} computerChoice={computerChoice} />}
 
       <p>Moves Left {moves}</p>
 
       {moves !== 0 && (
-        <ChoicesContainer setUserChoice={setUserChoice} setLoader={setLoader} setMoves={setMoves} moves={moves} />
+        <ChoicesContainer
+          setUserChoice={setUserChoice}
+          setLoader={setLoader}
+          setMoves={setMoves}
+          moves={moves}
+          setComputerChoice={setComputerChoice}
+        />
       )}
 
       {moves !== 0 && !loader && userChoice && computerChoice && (

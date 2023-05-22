@@ -3,7 +3,7 @@ import { FaHandScissors, FaHandRock, FaHandPaper } from "react-icons/fa"
 import { Spin } from "antd"
 import "./InputContainer.css"
 
-const InputContainer = ({ userInput, loader, setComputerChoice }) => {
+const InputContainer = ({ userInput, loader, computerChoice }) => {
   return (
     <div className="inputWrapper">
       {userInput && (
@@ -21,7 +21,7 @@ const InputContainer = ({ userInput, loader, setComputerChoice }) => {
         <div className="choosenItem">
           <h3>Computer Choice</h3>
           {loader && <Spin />}
-          {!loader && <ComputerInput setComputerChoice={setComputerChoice}/>}
+          {!loader && <ComputerInput computersChoice={computerChoice} />}
         </div>
       )}
     </div>
