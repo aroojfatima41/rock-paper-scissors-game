@@ -32,8 +32,7 @@ const Winner = ({ player, computer, playerScore, computerScore, setComputerScore
         setPlayerScore(playerScore++)
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [computer, computerScore, player, playerScore, setComputerScore, setPlayerScore])
 
   return <h1>{result}</h1>
 }
