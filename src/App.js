@@ -12,7 +12,7 @@ const App = () => {
   const [moves, setMoves] = useState(10)
   const [computerScore, setComputerScore] = useState(0)
   const [playerScore, setPlayerScore] = useState(0)
-
+console.log(playerScore,computerScore)
   return (
     <div className="root">
       <h1 className="App">Rock Paper Scissor</h1>
