@@ -9,7 +9,7 @@ const App = () => {
   const [userChoice, setUserChoice] = useState(undefined)
   const [loader, setLoader] = useState(true)
   const [computerChoice, setComputerChoice] = useState(undefined)
-  const [moves, setMoves] = useState(5)
+  const [moves, setMoves] = useState(10)
   const [computerScore, setComputerScore] = useState(0)
   const [playerScore, setPlayerScore] = useState(0)
 
