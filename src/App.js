@@ -17,7 +17,6 @@ const App = () => {
     const generateRandomNumber = Math.floor(Math.random() * 101)
     return generateRandomNumber <= 33 ? "scissors" : generateRandomNumber <= 66 ? "rock" : "paper"
   }
-  console.log(playerScore, computerScore)
 
   const decision = (userChoice) => {
     const computerChoice = getComputerInput()
@@ -81,8 +80,8 @@ const App = () => {
           {playerScore > computerScore
             ? "Congratulations! You Won"
             : playerScore === computerScore
-            ? "It's a tie"
-            : "Computer Won"}
+              ? "It's a tie"
+              : "Computer Won"}
         </h1>
       )}
       {moves === 0 && (
